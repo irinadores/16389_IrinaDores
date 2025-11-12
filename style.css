@@ -1,0 +1,430 @@
+/*GERAL*/
+body{font-family: 'Montserrat', sans-serif; margin: 0;font-size: 16px;}
+.flex-container{display:flex;}
+.space-between{justify-content: space-between;}
+.align-items{align-items: center;}
+*{box-sizing:border-box;}
+h1, h2, h3, h4, figure,p{margin:0;}
+a{text-decoration: none; color: inherit;}
+article img{width: 100%;}
+.container{width:100%; max-width:1200px;margin:0 auto;padding:0 2%;}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*MENU*/
+.menu {
+    position: fixed;
+    background-color: rgba(93,167,163,0.95);
+    width: 100%;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 15%;
+}
+
+.logo img{
+    height: 85px;
+}
+
+.menu nav a{
+    color: #FFFFFF;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.menu nav a.btn-agendar{
+    border: 2px solid #ffffff;
+    padding: 8px 18px;
+    border-radius: 30px;
+}
+
+.menu nav a.btn-agendar:hover{
+    background-color: #ffffff;
+    color: rgba(93,167,163,1);
+}
+
+/*HERO*/
+.hero {
+    background-color: #f4f9f8;
+    background-image: url("../images/dor-barriga.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 0 60px 0;
+    margin-top: 0;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin-left: 25px;
+    margin-top: 15px;     
+    
+    background-color: rgba(93,167,163,0.2);
+    border-radius: 7%;
+    width:40%;
+    padding:30px;
+    text-align:left;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #16323d;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.hero span {
+    color: #5da7a3;
+}
+
+.hero p {
+    max-width: 500px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.hero .small {
+    color: #0b7b6e;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/*SABIAQUE*/
+.info{
+    background-color: #e6f2f1;
+    text-align: left;
+    padding: 80px 0;
+}
+
+.card{
+    background-color: rgba(93,167,163,0.2);
+    border:5px solid rgba(93,167,163,0.2);
+    border-radius:20px;
+    width:45%;
+    padding:30px;
+    text-align:center;
+}
+
+.container h2{
+    margin-bottom: 20px;
+}
+
+/*IMAGEM + TEXTO*/
+.image-and-call{
+    padding:60px 0;
+    display: flex;
+    overflow: hidden;
+}
+
+.fotoabdomen img{
+    width: 700px;
+    margin-bottom:5px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.texto-call{
+    margin-top: 80px;
+    margin-left: 40px;
+}
+.texto-call h2{
+    font-size: 45px;
+    color: #16323d;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.texto-call p{
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.texto-call h3{
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 15px;
+}
+
+.texto-call span{
+    color: #5da7a3;
+}
+
+/*SINTOMAS*/
+.sintomas{
+    background-color:#e8f3f2;
+    text-align:center;
+    padding:60px 0;
+}
+
+.chips{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.chip{
+    background-color:#5da7a3;
+    color:#ffffff;
+    padding:10px 15px;
+    margin:5px;
+    border-radius:20px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.chip:hover{
+    background-color:#3e7c78;
+}
+
+.perguntassintomas{
+    margin-top:40px;
+    font-weight:600;
+    color:#16323d;
+}
+
+.perguntassintomas a{
+    color:#0b7b6e;
+}
+
+/*EQUIPA*/
+.equipa{
+    padding:80px 0;
+    text-align:center;
+}
+
+.member{
+    width:250px;
+    margin:20px;
+}
+
+.member img{
+    width:150px;
+    height:150px;
+    border-radius:100%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.member h3{
+    font-size:18px;
+    color:#16323d;
+}
+
+.member .role{
+    font-size:14px;
+    color:#5da7a3;
+}
+
+/*AGENDAR*/
+.agendamento {
+    background-color: #e6f2f1;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.agendamento h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #16323d;
+}
+
+.agendamento p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #0b7b6e;
+}
+
+.form-agendar {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.input-element, .message{
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(93,167,163,0.4);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+    color: #16323d;
+}
+
+.message {
+    height: 150px;
+    resize: vertical;
+}
+
+.btn-agendar {
+    background-color: #5da7a3;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-agendar:hover {
+    background-color: #3e7c78;
+}
+
+/*FOOTER*/
+
+.footer-brand img{
+   height: 200px;
+}
+
+.site-footer{
+    background-color:#5da7a3;
+    color:#ffffff;
+    padding:60px 0 30px 0;
+}
+
+.footer-info h4{
+    margin-bottom:10px;
+    text-transform:uppercase;
+    font-size:14px;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.4);
+    margin-top:30px;
+    padding-top:20px;
+    font-size:14px;
+    text-align:center;
+}
+
+/*Tablets (até 768px)*/
+@media (max-width: 768px) {
+
+    .menu {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .hero .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .image-and-call {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fotoabdomen img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .texto-call {
+        margin: 0;
+    }
+
+    .equipa .flex-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .member {
+        margin-bottom: 30px;
+    }
+
+    .form-agendar {
+        width: 90%;
+    }
+}
+
+/*Telemóveis (até 480px)*/
+@media (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .menu {
+        padding: 15px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .menu nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .hero {
+        padding: 120px 0 40px 0;
+    }
+
+    .hero .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .texto-call h2 {
+        font-size: 28px;
+    }
+
+    .texto-call p, .texto-call h3 {
+        font-size: 16px;
+    }
+
+    .fotoabdomen img {
+        width: 100%;
+    }
+
+    .chips {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chip {
+        width: 80%;
+        text-align: center;
+    }
+
+    .form-agendar {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .footer-brand img {
+        height: 120px;
+    }
+
+    .footer-info {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+    }
+}
